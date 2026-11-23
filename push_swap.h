@@ -14,7 +14,6 @@
 # define PUSH_SWAP_H
 
 # include <stdlib.h>
-# include <unistd.h>
 
 typedef struct s_stack
 {
@@ -44,3 +43,4 @@ typedef struct s_bench
 float	compute_disorder(t_stack **a);
 
 #endif
+
