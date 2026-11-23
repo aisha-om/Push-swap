@@ -1,0 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_putstr_fd.c                                    :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/27 22:36:43 by  aabufarw        #+#    #+#              */
+/*   Updated: 2026/11/01 23:04:31 by  aabufarw       ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "ft_printf.h"
+
+void	ft_putstr_fd(char *s, int fd, size_t *ret)
+{
+	size_t	x;
+	size_t	l;
+	char	*nl;
+
+	x = 0;
+	nl = "(null)";
+	if (s == NULL)
+	{
+		while (x < 6)
+			ft_putchar_fd(nl[x++], fd, ret);
+		return ;
+	}
+	if (!s)
+		return ;
+	l = ft_strlen(s);
+	while (x < l)
+		ft_putchar_fd(s[x++], fd, ret);
+}
