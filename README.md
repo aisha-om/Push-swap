@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by `<aabufarw>`, `<reab>`.*
+*This project has been created as part of the 42 curriculum by `<aabufarw>`, `<reabdall>`.*
 
 # push_swap
 
@@ -116,7 +116,7 @@ $$\text{Disorder} = \frac{\text{Inverted Pairs}}{\text{Total Pairs}} \in [0.0, 1
 
 This project was developed collaboratively by both partners using pair programming and shared design reviews across every stage of development:
 
-* **`<aabufarw>` & `<reab>`:**
+* **`<aabufarw>` & `<reabdall>`:**
   * Jointly designed the stack data structure, input parser, error validation (`INT_MIN`/`INT_MAX` bounds, duplicates, non-numeric inputs), and index normalization.
   * Co-implemented and benchmarked all three sorting algorithms (**Insertion Sort**, **Chunk Sort**, and **Radix Sort**) as well as the adaptive disorder calculation and `--bench` reporting.
   * Collaborated on memory leak verification, edge-case testing, and Norminette compliance.
