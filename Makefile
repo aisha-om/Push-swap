@@ -4,7 +4,9 @@ CFLAGS	= -Wall -Werror -Wextra
 SRCS	= simple_algo.c\
           adaptive.c\
           compute_disorder.c\
-
+		  complex_algo.c\
+		  medium_algo.c\
+		  main.c
 
 OBJS	= ${SRCS:%.c=%.o}
 RM		= rm -f

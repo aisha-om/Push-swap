@@ -6,7 +6,7 @@
 /*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/11/23 21:24:21 by  aabufarw        #+#    #+#              */
-/*   Updated: 2026/11/25 13:55:08 by  aabufarw       ###   ########.fr        */
+/*   Updated: 2026/11/25 20:55:36 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,11 +59,12 @@ static void	move_min(t_stack **a, int pos)
 	}
 }
 
-void	simple_sort(t_stack **a, t_stack **b)
+void	simple_sort(t_stack **a, t_stack **b, t_bench *bench)
 {
 	t_stack	*min;
 	int		pos;
 
+	bench->algo = "Simple Sort";
 	while (*a)
 	{
 		min = find_min(*a);
