@@ -15,7 +15,7 @@
 float	compute_disorder(t_stack **stack_a)
 {
 	t_stack	*current;
-	t_stack	*next;
+	t_stack	*compare;
 	float	mistakes;
 	float	total_pairs;
 
@@ -26,13 +26,13 @@ float	compute_disorder(t_stack **stack_a)
 	current = *stack_a;
 	while (current)
 	{
-		next = current->next;
-		while (next)
+		compare = current->next;
+		while (compare)
 		{
-			if (current->index > next->index)
-				mistakes++;
 			total_pairs++;
-			next = next->next;
+			if (current->index > compare->index)
+				mistakes++;
+			compare = compare->next;
 		}
 		current = current->next;
 	}
