@@ -6,7 +6,7 @@
 /*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/11/23 20:55:53 by  aabufarw        #+#    #+#              */
-/*   Updated: 2026/11/25 12:39:47 by  aabufarw       ###   ########.fr        */
+/*   Updated: 2026/11/25 13:40:29 by  aabufarw       ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,6 @@ typedef struct s_bench
 float	compute_disorder(t_stack **a);
 int		stack_size(t_stack *stack);
 void	adaptive_sort(t_stack **a, t_stack **b);
+void	simple_sort(t_stack **a, t_stack **b);
+
 #endif
