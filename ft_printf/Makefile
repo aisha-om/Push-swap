@@ -10,7 +10,7 @@ SRCS =	ft_printf.c\
 		ft_strlen.c\
 		ft_putptr.c\
 
-CC 		= cc 
+CC 		= cc
 CFLAGS  = -Wall -Wextra -Werror
 AR 		= ar -rcs
 OBJS	= ${SRCS:%.c=%.o}
@@ -29,5 +29,5 @@ clean:
 fclean:	clean
 	${RM} ${NAME}
 
-re:	fclean all 
+re:	fclean all
 .PHONY:	all clean fclean re
