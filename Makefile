@@ -1,11 +1,12 @@
 NAME	= push_swap
 CC		= cc
 CFLAGS	= -Wall -Werror -Wextra
-SRCS	= simple_algo.c\
-          adaptive.c\
+SRCS	= stack.c libft.c\
+          simple_algo.c\
           compute_disorder.c\
-		  complex_algo.c\
-		  medium_algo.c\
+		  #complex_algo.c\
+		  #medium_algo.c\
+		  adaptive.c\
 		  main.c
 
 OBJS	= ${SRCS:%.c=%.o}
