@@ -3,17 +3,19 @@
 /*                                                       :::      ::::::::    */
 /*   push_swap.h                                       :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By:  aabufarw <aabufarw@student.42.fr>        #+#  +:+       +#+         */
+/*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/11/23 20:55:53 by  aabufarw        #+#    #+#              */
-/*   Updated: 2026/11/25 22:28:58 by  aabufarw       ###   ########.fr        */
+/*   Created: 2026/11/23 20:55:53 by aabufarw         #+#    #+#              */
+/*   Updated: 2026/11/28 14:25:21 by aabufarw        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
+# include "ft_printf/ft_printf.h"
 
 # include <stdlib.h>
+# include <unistd.h>
 
 typedef struct s_stack
 {
@@ -24,20 +26,18 @@ typedef struct s_stack
 }	t_stack;
 typedef struct s_bench
 {
-	int	sa;
-	// Count of sa operation
-	int	sb;
-	int	ss;
-	int	pa;
-	int	pb;
-	int	ra;
-	int	rb;
-	int	rr;
-	int	rra;
-	int	rrb;
-	int	rrr;
-	int	total;
-	// Total number of operations for all moves
+	int		sa;
+	int		sb;
+	int		ss;
+	int		pa;
+	int		pb;
+	int		ra;
+	int		rb;
+	int		rr;
+	int		rra;
+	int		rrb;
+	int		rrr;
+	int		total;
 	char	*algo;
 	float	disorder;
 	char	*complexity;
@@ -50,4 +50,6 @@ void	simple_sort(t_stack **a, t_stack **b, t_bench *bench);
 void	medium_sort(t_stack **a, t_stack **b, int n, t_bench *bench);
 void	complex_sort(t_stack **a, t_stack **b, t_bench *bench);
 int		ft_strcmp(const char *s1, const char *s2);
+void	ft_lstclear(t_stack **lst);
+void	ft_lstadd_back_new(t_stack **lst, int content);
 #endif

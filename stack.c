@@ -6,13 +6,13 @@
 /*   By: aabufarw <aabufarw@student.42.fr>         #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/11/28 12:35:14 by aabufarw         #+#    #+#              */
-/*   Updated: 2026/11/28 14:16:59 by aabufarw        ###   ########.fr        */
+/*   Updated: 2026/11/28 14:19:16 by aabufarw        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"push_swap.h"
 
-t_stack	*ft_lstlast(t_stack *lst)
+static t_stack	*ft_lstlast(t_stack *lst)
 {
 	if (!lst)
 		return (NULL);
