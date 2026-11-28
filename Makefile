@@ -4,8 +4,8 @@ CFLAGS	= -Wall -Werror -Wextra
 SRCS	= stack.c libft.c\
           simple_algo.c\
           compute_disorder.c\
-		  #complex_algo.c\
-		  #medium_algo.c\
+		  complex_algo.c\
+		  medium_algo.c\
 		  adaptive.c\
 		  main.c
 
